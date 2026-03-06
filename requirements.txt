@@ -1,0 +1,10 @@
+numpy 
+pandas
+matplotlib
+scikit-learn
+seaborn
+torch
+transformers
+streamlit
+nltk
+tqdm
