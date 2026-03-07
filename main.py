@@ -9,10 +9,11 @@ app = FastAPI(title="Anxiety Level Predictor", version="1.0")
 # ✅ CORS — allows React on port 5173 to talk to FastAPI
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    
+   allow_origins=[
+    "http://localhost:5173",
+    "https://student-anxiety-detector.vercel.app",  # your exact vercel URL
+]
 )
 
 # ✅ Load model once at startup
