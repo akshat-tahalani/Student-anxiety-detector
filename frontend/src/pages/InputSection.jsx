@@ -19,7 +19,7 @@ const handleSubmit = async (e) => {
 
   try {
     // ✅ Call your FastAPI backend
-   const response = await fetch("https://akshattahalani-anxiety-detector-api.hf.space/predict", {
+   const response = await fetch("https://akshattahalani-anxiety-detector.hf.space/predict", {
 
       method: "POST",
       headers: { "Content-Type": "application/json" },
