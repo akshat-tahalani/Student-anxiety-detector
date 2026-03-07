@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
+import ExercisePlayer from './pages/ExercisePlayer';
+
 
 import Background3D from './components/Background3D';
 import Landing from './pages/Landing';
@@ -9,12 +11,16 @@ import AnalysisResult from './pages/AnalysisResult';
 import Suggestions from './pages/Suggestions';
 import Dashboard from './pages/Dashboard';
 
+
+
+
 function AnimatedRoutes() {
   const location = useLocation();
 
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
+        <Route path="/exercise/:id" element={<ExercisePlayer />} />
         <Route path="/" element={<Landing />} />
         <Route path="/input" element={<InputSection />} />
         <Route path="/result" element={<AnalysisResult />} />
