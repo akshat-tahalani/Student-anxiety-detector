@@ -220,7 +220,8 @@ Make sure `InputSection.jsx` points to `http://127.0.0.1:8000/predict` for local
 ---
 
 ## 👨‍💻 Author
-
+**Harsh Saxena**
+vGitHub: [@harshsaxena2004](https://github.com/harshsaxena2004)
 **Akshat Tahalani**
 GitHub: [@akshat-tahalani](https://github.com/akshat-tahalani)
 Hugging Face: [@akshattahalani](https://huggingface.co/akshattahalani)
